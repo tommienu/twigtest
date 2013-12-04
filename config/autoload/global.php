@@ -10,6 +10,7 @@
  * control, so do not include passwords or other sensitive information in this
  * file.
  */
+date_default_timezone_set('Europe/Stockholm');
 
 return array(
     // ...

@@ -16,6 +16,10 @@ class IndexController extends AbstractActionController
 {
     public function indexAction()
     {
-        return new ViewModel();
+      return new ViewModel(array(
+				'data' => array("test"=>"test2"),
+				'twigdata' => 'works',
+				'users' => array('patrik','tommie','prince')
+      ));
     }
 }

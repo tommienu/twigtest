@@ -1,0 +1,8 @@
+<h1>Vars</h1>
+twig variable: {{ twigdata }}<br />
+twig variable in object: {{ data['test'] }}<br />
+
+<h1>List of users</h1>
+{% for user in users %}
+    <li>{{ user|e }}</li>
+{% endfor %}

@@ -1,4 +1,1 @@
-twigtest
-========
-
-Testing twig with ZF2
+Testing Twig, HAML and ZF2

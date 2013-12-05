@@ -16,10 +16,24 @@ class IndexController extends AbstractActionController
 {
     public function indexAction()
     {
-      return new ViewModel(array(
+
+      $mt = new \MtHaml\Environment('twig', array('enable_escaper' => false));
+
+      // load HAML files from templates/
+      $fs = new \Twig_Loader_Filesystem(__DIR__ . '/../../../view/');
+      $loader = new \MtHaml\Support\Twig\Loader($mt, $fs);
+
+      // start twig
+      $twig = new \Twig_Environment($loader, array(
+          //'cache' => 'cache/',
+      ));
+      
+      echo $twig->render("application/index/index.twig", array(
 				'data' => array("test"=>"test2"),
 				'twigdata' => 'works',
 				'users' => array('patrik','tommie','prince')
       ));
+
+      return false;
     }
 }

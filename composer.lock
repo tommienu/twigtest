@@ -3,8 +3,65 @@
         "This file locks the dependencies of your project to a known state",
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
     ],
-    "hash": "c3ecb8ffd50e93a42f7cb7dfe649c58a",
+    "hash": "3dea8769c3d5a8aa27b99505fa26ed4e",
     "packages": [
+        {
+            "name": "mthaml/mthaml",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/arnaud-lb/MtHaml.git",
+                "reference": "85b929c2e1bb38fcae0faf828c487fea4df7de7c"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/arnaud-lb/MtHaml/zipball/85b929c2e1bb38fcae0faf828c487fea4df7de7c",
+                "reference": "85b929c2e1bb38fcae0faf828c487fea4df7de7c",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.0"
+            },
+            "conflict": {
+                "mthaml/mthaml-bundle": "<1.1.0"
+            },
+            "require-dev": {
+                "coffeescript/coffeescript": "~1",
+                "leafo/lessphp": "*",
+                "leafo/scssphp": "*",
+                "michelf/php-markdown": "~1.3",
+                "twig/twig": "~1.11"
+            },
+            "suggest": {
+                "coffeescript/coffeescript": "If you want to use :coffee or :coffeescript filter",
+                "leafo/lessphp": "If you want to use :less filter",
+                "leafo/scssphp": "If you want to use :scss filter",
+                "michelf/php-markdown": "If you want to use :markdown filter",
+                "twig/twig": "If you want to use Twig templating engine"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "MtHaml\\": "lib/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Arnaud Le Blanc",
+                    "email": "arnaud.lb@gmail.com"
+                }
+            ],
+            "description": "HAML for PHP",
+            "homepage": "https://github.com/arnaud-lb/MtHaml",
+            "keywords": [
+                "HAML"
+            ],
+            "time": "2013-10-20 12:09:50"
+        },
         {
             "name": "twig/twig",
             "version": "v1.13.2",
@@ -227,7 +284,8 @@
     ],
     "minimum-stability": "stable",
     "stability-flags": {
-        "zf-commons/zfc-twig": 20
+        "zf-commons/zfc-twig": 20,
+        "mthaml/mthaml": 20
     },
     "platform": {
         "php": ">=5.3.3"

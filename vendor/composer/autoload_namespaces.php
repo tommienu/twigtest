@@ -9,4 +9,5 @@ return array(
     'ZfcTwig\\' => array($vendorDir . '/zf-commons/zfc-twig/src'),
     'Zend\\' => array($vendorDir . '/zendframework/zendframework/library'),
     'Twig_' => array($vendorDir . '/twig/twig/lib'),
+    'MtHaml\\' => array($vendorDir . '/mthaml/mthaml/lib'),
 );

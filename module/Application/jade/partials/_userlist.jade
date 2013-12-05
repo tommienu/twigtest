@@ -1,0 +1,9 @@
+h3 mammamioa!
+| {% for user in users %} 
+li
+  | {% if user == twigdata %}
+  b {{ user|e }}
+  | {% else %}
+  {{ user|e }}
+  | {% endif %}
+  | {% endfor %}

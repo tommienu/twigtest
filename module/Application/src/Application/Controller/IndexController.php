@@ -14,6 +14,7 @@ use Zend\View\Model\ViewModel;
 
 class IndexController extends AbstractActionController
 {
+<<<<<<< HEAD
     public function indexAction()
     {
 
@@ -29,8 +30,12 @@ class IndexController extends AbstractActionController
       ));
       
       echo $twig->render("application/index/index.twig", array(
+=======
+    public function indexAction() {
+      return new ViewModel(array(
+>>>>>>> tommie
 				'data' => array("test"=>"test2"),
-				'twigdata' => 'works',
+				'twigdata' => 'tommie',
 				'users' => array('patrik','tommie','prince')
       ));
 

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 {% haml %}
 %ul#users
   - for user in users
@@ -8,3 +9,16 @@
 Var: #{twigdata}
 %br
 Object Var: #{data.test}
+=======
+
+<h1>Vars twig variable: {{ twigdata }}
+  <p>twig variable in object: {{ data['test'] }}</p>
+  <h1>List of users</h1>
+  <h3>mammamioa!</h3>{% for user in users %} 
+  <li>{% if user == twigdata %}<b>{{ user|e }}</b>{% else %}
+    {{ user|e }}
+    {% endif %}
+    {% endfor %}
+  </li>
+</h1>
+>>>>>>> tommie

@@ -1,8 +1,11 @@
-<h1>Vars</h1>
-twig variable: {{ twigdata }}<br />
-twig variable in object: {{ data['test'] }}<br />
 
-<h1>List of users</h1>
-{% for user in users %}
-    <li>{{ user|e }}</li>
-{% endfor %}
+<h1>Vars twig variable: {{ twigdata }}
+  <p>twig variable in object: {{ data['test'] }}</p>
+  <h1>List of users</h1>
+  <h3>mammamioa!</h3>{% for user in users %} 
+  <li>{% if user == twigdata %}<b>{{ user|e }}</b>{% else %}
+    {{ user|e }}
+    {% endif %}
+    {% endfor %}
+  </li>
+</h1>
